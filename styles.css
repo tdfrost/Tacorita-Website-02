@@ -292,3 +292,71 @@ header{
    opacity: 1;
    transition:ease-in .9s;
 }
+
+/**Our Story*/
+ .about-us-headline{
+     text-align: center;
+     padding-bottom: 3.0rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .about-us-headline h1{
+     font-size: 5.3rem;
+     letter-spacing: 0.3rem;
+     margin-right: 0.3rem;
+ }
+ .headline-dark{
+     color: var(--secondary-font-color);
+ }
+ .smile-taco-left,.smile-taco-right{
+     height: 8rem;
+     width: 8rem;
+     margin: 1.5rem;
+ }
+ .smile-taco-left{
+     transform: rotate(15deg);
+ }
+ .smile-taco-right{
+     transform: rotate(-15deg);
+ }
+
+ .restaurant-info{
+     text-align: center ;
+ }
+ 
+ .restaurant-description{
+     margin-bottom: 3rem;
+ }
+
+ .restaurant-description p{
+     line-height: 1.6;
+     margin-bottom: 1.2rem;
+ }
+
+ .body-btn{
+    font-size: 1.5rem;
+    color: var(--secondary-font-color);
+    position: relative;
+    transition: color .5s;
+ }
+
+.body-btn::before{
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: var(--secondary-font-color);
+    transition: background-color .5s;
+}
+
+.body-btn:hover,.body-button:focus{
+    color: var(--main-font-color-dark);
+}
+
+.body-btn:hover::before,.body-btn:focus::before{
+    background-color: var(--main-font-color-dark);
+}
+
