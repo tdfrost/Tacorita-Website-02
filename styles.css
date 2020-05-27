@@ -360,3 +360,92 @@ header{
     background-color: var(--main-font-color-dark);
 }
 
+/*fresh food*/
+ .fresh-food{
+     background: url(images/food-drink.jpg) center no-repeat;
+     background-size: cover;  
+ }
+
+ .between{
+     min-height: 65vh;
+     display: flex;
+     align-items: center;
+     text-align: center;
+ }
+
+ /*Our menu*/
+ .image-group{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap: 1.5rem;
+ }
+
+ .our-menu .restaurant-description{
+     padding-top: 5.5rem;
+     margin-bottom: 0;
+ }
+
+ .delicious-drinks{
+    background: url(/images/drink-section.jpg)center no-repeat;
+    background-size: cover;
+ }
+
+footer{
+padding: 8.2rem 0;
+background-color: #121212;
+color: #fff ;
+text-align: center;
+position: relative;
+}
+.back-to-top{
+    width: 8rem;
+    height: 8rem;
+    background-color: #121212;
+    position: absolute ;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 50%;
+}
+
+.back-to-top i{
+    display: block;
+    color: #fff;
+    font-size: 4rem;
+    padding: 2rem;
+    padding-top: 1.5rem;
+}
+.footer-content{
+
+}
+.footer-content h4{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem ;
+}
+
+.footer-content-about{
+    margin-bottom: 5.4rem;
+}
+.footer-content-about p{
+    line-height: 2;
+}
+
+.social-icons{
+    list-style: none;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.social-icons i{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .8rem 2rem;
+    opacity: 0.7;
+    transition: color 0.5s;
+}
+.social-icons i:hover, .social-icons:focus {
+    color: var(--secondary-font-color);
+}
