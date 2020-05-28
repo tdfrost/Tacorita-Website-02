@@ -159,7 +159,7 @@ header{
 
 .sub-headline {
     font-size: 5.5rem;
-    font-family: Palatino;
+    font-family: Helvetica;
     /* color: #fdf9e0; */
     color: #fff;
     font-weight: 100;
@@ -167,6 +167,9 @@ header{
     /* padding-bottom: 38vh; */
     line-height: .7;
     letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeIn .8s forwards;
+    animation-delay: .4s;
 }
 
 .headline{
@@ -416,7 +419,7 @@ position: relative;
     padding-top: 1.5rem;
 }
 .footer-content{
-
+/*Update later*/
 }
 .footer-content h4{
     font-size: 1.9rem;
@@ -448,4 +451,134 @@ position: relative;
 }
 .social-icons i:hover, .social-icons:focus {
     color: var(--secondary-font-color);
+}
+
+/*Media Queries*/
+@media screen and (min-width: 980px){
+    section{
+        padding: 7.9rem;
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    .nav{
+        justify-content: space-between;
+    }
+    .nav-list{
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+
+    .nav-item{
+        margin: 0 2.4rem;
+        border: none;
+    }
+
+    .nav-item:last-child{
+        margin-right: 0;
+    }
+
+    .nav-link{
+        font-size: 1.4rem;
+    }
+    .active{
+        position: relative;
+    }
+    .active::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        bottom: -3px;
+    }
+    
+    .sub-headline{
+        font-size: 10rem;
+    }
+
+    .first-letter{
+        font-size: 11rem;
+    }
+
+    .headline{
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+    
+    .line{
+        max-width: 11.4rem;
+    }
+
+    .restaurant-info{
+        display: flex;
+        align-items: center;
+    }
+    
+    .restaurant-info-img{
+        padding-left: 8rem;
+    }
+
+    .our-menu .image-group{
+        padding-right: 8rem;
+    }
+
+    .specials .image-group{
+        padding-left: 15rem;
+    }
+
+    .smile-taco-left, .smile-taco-right {
+        height: 12rem;
+        width: 12rem;
+        /*Maybe remove the line below*/
+        margin: -0rem;
+    }
+    .specials .smile-taco-left,.specials .smile-taco-right {
+        height: 15rem;
+        width: 15rem;
+        margin: -5rem;
+    }
+    .restaurant-info > div{
+        flex: 1;
+    }
+    .specials .image-group {
+        flex: 1.5;
+    }
+
+    .footer-content{
+        max-width: 77.5rem;
+        margin: auto;
+    }
+
+    .footer-content-about{
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+    }
+
+    .social-media{
+        width: 100%;
+        max-width: 27.3rem;
+        margin: 0;
+    }
+}
+
+/*Animations*/
+@keyframes fadeIn{
+    0%{
+       transform: translateY(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
