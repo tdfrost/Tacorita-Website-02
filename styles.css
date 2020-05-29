@@ -519,7 +519,19 @@ position: relative;
     }
     
     .line{
-        max-width: 11.4rem;
+        max-width: 14.4rem;
+    }
+
+    .hero h5{
+        font-size: 1.6rem;
+        padding-top: 0.1rem;
+    }
+    .order-online-btn{
+        height: 4.0rem;
+        width: 12.1rem;
+        font-size: 1.4rem;
+        line-height: 3.8rem;
+
     }
     
     .restaurant-info{
