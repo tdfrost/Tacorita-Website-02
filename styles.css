@@ -521,7 +521,7 @@ position: relative;
     .line{
         max-width: 11.4rem;
     }
-
+    
     .restaurant-info{
         display: flex;
         align-items: center;
@@ -552,6 +552,11 @@ position: relative;
     }
     .restaurant-info > div{
         flex: 1;
+    }
+
+    .delicious-drinks .sub-headline{
+        
+        padding: 1rem;
     }
     .specials .image-group {
         flex: 3;
