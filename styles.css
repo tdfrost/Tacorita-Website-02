@@ -486,7 +486,9 @@ position: relative;
     .nav-item:last-child{
         margin-right: 0;
     }
-
+    nav .logo{
+        margin-left: -15rem;
+    }
     .nav-link{
         font-size: 1.4rem;
     }
@@ -546,7 +548,7 @@ position: relative;
     .specials .smile-taco-left,.specials .smile-taco-right {
         height: 15rem;
         width: 15rem;
-        margin: -5rem;
+        margin: -4rem;
     }
     .restaurant-info > div{
         flex: 1;
