@@ -389,7 +389,7 @@ header{
  }
 
  .delicious-drinks{
-    background: url(/images/drink-section.jpg)center no-repeat;
+    background: url(images/drink-section.jpg)center no-repeat;
     background-size: cover;
  }
 
@@ -418,9 +418,9 @@ position: relative;
     padding: 2rem;
     padding-top: 1.5rem;
 }
-.footer-content{
-/*Update later*/
-}
+/* .footer-content{
+
+} */
 .footer-content h4{
     font-size: 1.9rem;
     text-transform: uppercase;
@@ -552,7 +552,7 @@ position: relative;
         flex: 1;
     }
     .specials .image-group {
-        flex: 1.5;
+        flex: 3;
     }
 
     .footer-content{
