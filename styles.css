@@ -157,6 +157,17 @@ header{
     text-align: center;
 }
 
+.menu-hero{
+    width: 100%;
+    height: 80vh ;
+    background: url("images/menu-background.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .sub-headline {
     font-size: 5.5rem;
     font-family: Helvetica;
@@ -487,7 +498,9 @@ position: relative;
         margin-right: 0;
     }
     nav .logo{
-        margin-left: -10rem;
+        /* margin-left: -10rem; */
+        left: -12rem;
+        position: relative;
     }
     .nav-link{
         font-size: 1.4rem;
