@@ -464,6 +464,16 @@ position: relative;
     color: var(--secondary-font-color);
 }
 
+/*Menu Page Code*/
+.tab{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 7rem;
+}
+.tab-content{
+    padding-top: 2rem;
+}
+
 /*Media Queries*/
 @media screen and (min-width: 980px){
     section{
