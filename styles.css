@@ -465,14 +465,73 @@ position: relative;
 }
 
 /*Menu Page Code*/
+.menu-tabs{
+    background: #fafafa;
+}
+
 .tab{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 7rem;
+    row-gap: -7rem;
 }
+.tab button{
+    background: #fafafa;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    outline-width: thin;
+    outline-color: var(--body-font-color);
+    transition: all .5s ease;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tab-links h4{
+    color: #121212;
+    margin-bottom: .5rem;
+    font-weight: 650;
+    opacity: 0.6;
+}
+
+.menu-tabs .container .tab button:hover h4{opacity: 1;}
+.menu-tabs .container .tab button:hover{background: #fff;}
+.menu-tabs .container .tab:hover ~ .grid-pad {
+    background: #fff;
+}
+
+
+.menu-tabs .button-wrap svg{
+    width: 30%;
+    
+}
+
+.grid-pad{
+    padding: 5px 0 5px 5px;
+    background: #fafafa;
+    transition: all .5s ease;
+}
+
+/*Menu tab content*/
 .tab-content{
     padding-top: 2rem;
+    background: #fff;
+    display: none;
+    border-radius: 10px;
+    animation: fadeEffect 1s;
 }
+
+.tab-content-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab-content-description h5{
+    color: var(--secondary-font-color);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
 
 /*Media Queries*/
 @media screen and (min-width: 980px){
@@ -614,7 +673,56 @@ position: relative;
     }
 }
 
+/*Menu Media Queries*/
+@media screen and (max-width: 600px){
+    .tab{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 4rem;
+        padding-bottom: 2rem;
+    }
+    .tab img{
+        display: none;
+    }
+    .tab-content-wrap{
+        flex-direction: column;
+    }
+    .grid-pad{
+        display: none;
+    }
+    .menu-hero .sub-headline {
+        line-height: 4.7rem;
+    }
+    .tab button{
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    /*index html font size for phone devices*/
+    #fresh-food-headline-top, #fresh-food-headline-bottom{
+        font-size: 4.8rem;
+    }
+
+    .headline{
+        line-height: 5rem;
+    }
+    .specials .headline{
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: -0.2rem;
+    }
+
+    .smile-taco-left, .smile-taco-right {
+        height: 15rem;
+        width: 15rem;
+        /*Maybe remove the line below*/
+        margin: -0rem;
+        padding-top: 2rem;
+        position: static;
+    }
+}
+
 /*Animations*/
+
+/*Key Frames for index.html*/
 @keyframes fadeIn{
     0%{
        transform: translateY(4rem);
@@ -622,5 +730,16 @@ position: relative;
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/*Key Franes for menu.html*/
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+    100%{
+        opacity: 1;
     }
 }

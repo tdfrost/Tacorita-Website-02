@@ -50,7 +50,7 @@
     <!--header ends-->
 
     <!--Hero Begins-->
-    <section class="menu-hero">
+    <section class="menu-hero" id="menu-hero">
         <div class="container">
             <h2 class="sub-headline">
                 <span class="first-letter">O</span>ur Menu
@@ -61,11 +61,11 @@
 
     <!--Menu tabs section starts-->
     <section class="menu-tabs">
-        <div class="container">
+        <div class="container" style="overflow: hidden;">
             <div class="tab">
                 <button class="tab-links starters">
-                    <h4>Starters</h4>
                     <div class="button-wrap">
+                        <h4>Starters</h4>
                         <img src="images/chip-icon.svg" alt=""
                         style="width: 54px; height: 54px;">
                     </div>
@@ -106,9 +106,12 @@
                     </div>
                 </button>
             </div>
+            <div class="grid grid-pad">
+                    
+            </div>
 
             <!--Tabs Content-->
-            <div class="tab-content starter-content">
+            <div class="tab-content starters-content" id="default-open">
                 <div class="tab-content-wrap">
                     <div class ="tab-content-description">
                         <h5>Starter Menu</h5>
@@ -121,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="tab-content lunch-content">
+            <div class="tab-content lunch-dinner-content">
                 <div class="tab-content-wrap">
                     <div class ="tab-content-description">
                         <h5>Lunch/Dinner Menu</h5>
@@ -134,7 +137,7 @@
                 </div>
             </div>
 
-            <div class="tab-content soup-content">
+            <div class="tab-content soups-salads-content">
                 <div class="tab-content-wrap">
                     <div class ="tab-content-description">
                         <h5>Soup/Salad Menu</h5>
@@ -187,6 +190,33 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#menu-hero"><i class="fas fa-chevron-circle-up"></i></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-about animate-up">
+                    <h4>Hours</h4>
+                    <!--<div><i class="fas fa-sun"></i></div>-->
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate recusandae amet harum, nisi perferendis alias.
+                         Aliquam natus cum officiis numquam quas, doloremque repellat explicabo quam, nulla aspernatur architecto, fugit beatae!
+                    </p>
+                </div>
+                <div class="footer-content-divider animate-bottom">
+                    <div class="social-menu">
+                        <h4>Stay in the loop</h4>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 <script src="main.js"></script>
 </body>
