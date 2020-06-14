@@ -159,8 +159,19 @@ header{
 
 .menu-hero{
     width: 100%;
-    height: 80vh ;
+    height: 100vh ;
     background: url("images/menu-background.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.specials-hero{
+    width: 100%;
+    height: 100vh ;
+    background: url("images/specials-background.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -580,6 +591,57 @@ position: relative;
     margin-bottom: 0.5rem;
 }
 
+/*Specials Page code*/
+.flex-grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    flex: 1;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    /* text-align: center; */
+}
+
+.flex-grid .col{
+    width: 20%;
+}
+
+.col-title{
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 1.9rem;
+}
+
+.specials-description{
+    font-size: 3rem;
+}
+
+.smile-taco-specials{
+    height: 60px;
+    width: 60px;
+    display: block;
+    margin: auto auto 1.9rem auto;
+}
+
+.col-one{
+    animation: fallInPlaceEffect 1.5s;
+}
+
+.col-two{
+    animation: fallInPlaceEffect 2s;
+}
+
+.col-three{
+    animation: fallInPlaceEffect 2.5s;
+    
+}
+.col-four{
+    animation: fallInPlaceEffect 3s;
+    
+}
+
 
 /*Media Queries*/
 @media screen and (min-width: 980px){
@@ -789,5 +851,17 @@ position: relative;
     }
     100%{
         opacity: 1;
+    }
+}
+
+/*Keyframes for specials*/
+@keyframes fallInPlaceEffect{
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+    100%{
+        opacity: 1;
+
     }
 }
