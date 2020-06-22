@@ -577,7 +577,7 @@ position: relative;
     margin-bottom: .5rem;
     font-size: 1.5rem;
 }
-.spicy{
+.spicy-drink-details{
     margin-bottom: 2rem;
     font-size: 1.5rem;
     color: #c42814;
@@ -616,6 +616,16 @@ position: relative;
     width: 100%;
 }
 
+.cuban{
+    text-align: center;
+    list-style: inside;
+    list-style: none;
+}
+
+.cuban ul{
+    column-count: 1;    
+}
+
 .soups-salads-content ul{
     column-count: 1;
 }
@@ -624,6 +634,13 @@ position: relative;
     display: inline-block;
 }
 
+.beer-items ul{
+    column-count: 1;
+}
+
+.cocktail-items ul{
+    column-count: 1;
+}
 
 
 .tab-content-description{
@@ -719,7 +736,21 @@ position: relative;
     animation: fallInPlaceEffect 3s;
     
 }
+.col{
+    text-align: center;
+    list-style: inside;
+    list-style: none;
+}
 
+.lunch-specials{
+    background: url(images/weekday-specials-background.jpg) center no-repeat;
+    background-size: cover;  
+}
+.lunch-specials-content{
+    text-align: center;
+    list-style: inside;
+    list-style: none;
+}
 
 /*Media Queries*/
 @media screen and (min-width: 980px){
