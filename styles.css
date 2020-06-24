@@ -195,6 +195,17 @@ header{
     text-align: center;
 }
 
+.catering-hero{
+    width: 100%;
+    height: 100vh ;
+    background: url("images/catering-hero.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .sub-headline {
     font-size: 5.5rem;
     font-family: Helvetica;
@@ -862,6 +873,40 @@ position: relative;
 .team-item .position{
     font-size: 16px !important;
     color: #afafaf;
+}
+
+/*Catering Page Code*/
+.catering-header{
+    text-align: center;
+}
+
+.catering-header h2{
+    margin-bottom: 2.7rem;
+}
+
+.catering-details h2{
+    font-size: 32px;
+    margin-bottom: 2.1rem;
+}
+
+.catering-details p{
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.cater-taco-smile{
+    height: 80px;
+    width: 80px;
+    margin: 0.4rem;
+    transform: translateY(-0.6rem);
+    animation: scale 0.5s forwards;
+    animation-delay: .5s;
+    opacity: 0;
+    display: block;
+    margin: auto;
+}
+.headline-red{
+    color: #c42814;
 }
 
 
