@@ -47,11 +47,25 @@ sr.reveal('.animate-left', {
     delay: 300
 });
 
+sr.reveal('.animate-left-slow', {
+    origin: 'left',
+    duration: 1200,
+    distance: '25rem',
+    delay: 500
+});
+
 sr.reveal('.animate-right', {
     origin: 'right',
     duration: 1000,
     distance: '25rem',
     delay: 600
+});
+
+sr.reveal('.animate-right-slow', {
+    origin: 'right',
+    duration: 1200,
+    distance: '25rem',
+    delay: 500
 });
 
 sr.reveal('.animate-top', {
@@ -88,9 +102,58 @@ sr.reveal('.animate-col-three', {
     distance: '25rem',
     delay: 1200
 });
+
 sr.reveal('.animate-col-four', {
     origin: 'top',
     duration: 1500,
     distance: '25rem',
     delay: 1500
+});
+
+sr.reveal('.animate-card-one', {
+    origin: 'top',
+    duration: 1500,
+    distance: '25rem',
+    delay: 600
+});
+
+sr.reveal('.animate-card-two', {
+    origin: 'bottom',
+    duration: 1500,
+    distance: '25rem',
+    delay: 900
+});
+
+sr.reveal('.animate-card-three', {
+    origin: 'top',
+    duration: 1500,
+    distance: '25rem',
+    delay: 1200
+});
+sr.reveal('.animate-card-four', {
+    origin: 'bottom',
+    duration: 1500,
+    distance: '25rem',
+    delay: 1500
+});
+
+sr.reveal('.animate-card-five', {
+    origin: 'top',
+    duration: 1500,
+    distance: '25rem',
+    delay: 1800
+});
+
+sr.reveal('.animate-card-six', {
+    origin: 'bottom',
+    duration: 1500,
+    distance: '25rem',
+    delay: 2100
+});
+
+sr.reveal('.animate-card-seven', {
+    origin: 'top',
+    duration: 1500,
+    distance: '25rem',
+    delay: 2400
 });
