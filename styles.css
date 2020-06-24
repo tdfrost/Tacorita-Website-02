@@ -206,6 +206,17 @@ header{
     text-align: center;
 }
 
+.contant-us-hero{
+    width: 100%;
+    height: 100vh ;
+    background: url("images/contact-us-hero.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .sub-headline {
     font-size: 5.5rem;
     font-family: Helvetica;
@@ -909,7 +920,34 @@ position: relative;
     color: #c42814;
 }
 
+/*Contact Us page code*/
+.contact-us-wrapper{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
 
+}
+
+.contact-us-header{
+    text-align: center;
+}
+
+.contact-us-header h2{
+    margin-bottom: 2.7rem;
+}
+.contact-us-details{
+    margin: 40px;
+}
+
+.contact-us-details h2{
+    font-size: 32px;
+    margin-bottom: 2.1rem;
+}
+
+.contact-us-details p{
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
 
 /*Media Queries*/
 @media screen and (min-width: 980px){
