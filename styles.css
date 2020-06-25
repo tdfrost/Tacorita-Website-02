@@ -1134,7 +1134,21 @@ position: relative;
         padding-top: 2rem;
         position: static;
     }
+
+    .to-intro{
+        margin-bottom: -1.7rem;
+    }
+
+    .tacorita{
+        margin-bottom: -1.7rem;
+    }
+
+    .delicious-drinks h2{
+        margin-top: 1rem;
+    }
 }
+
+
 
 /*Animations*/
 
