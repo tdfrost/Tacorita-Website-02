@@ -254,7 +254,7 @@ header{
 }
 
 .to-intro{
-    color:#ff2c0f;
+    color:#fff;
     /* transform: translateX(14rem); */
     animation: 
         slideRightFadeInEffect 1.0s forwards;
@@ -785,12 +785,21 @@ position: relative;
     list-style: none;
 }
 
+.lunch-specials-content ul{
+    list-style: none;
+}
+
 /*About us page code*/
 .our-vision{
     text-align: center;
     list-style: inside;
     list-style: none;
 }
+
+.our-vision h2{
+    margin-bottom: 4rem;
+}
+
 .our-leadership-team{
     background-color: #121212;
     text-align: center;
@@ -798,7 +807,7 @@ position: relative;
     list-style: none;
 }
 .our-leadership-team h2{
-    margin-bottom: 9rem;
+    margin-bottom: 7rem;
 }
 
 .row{
@@ -933,7 +942,7 @@ position: relative;
 }
 
 .contact-us-header h2{
-    margin-bottom: 2.7rem;
+    margin-bottom: 6rem;
 }
 .contact-us-details{
     margin: 40px;
@@ -942,11 +951,17 @@ position: relative;
 .contact-us-details h2{
     font-size: 32px;
     margin-bottom: 2.1rem;
+    text-align: center;
+}
+
+.contact-us-details h3{
+    text-align: center;
 }
 
 .contact-us-details p{
     font-size: 20px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 /*Media Queries*/
@@ -1146,6 +1161,45 @@ position: relative;
     .delicious-drinks h2{
         margin-top: 1rem;
     }
+
+
+
+    .quesadilla-enchiladas{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .quesadilla-content, .enchilada-content{
+        margin: 4rem 0rem 2rem;
+        
+    }
+
+    .our-leadership-team h2{
+        line-height: 5.5rem;
+    }
+    
+    .catering-header h2{
+        line-height: 4.8rem;
+    }
+
+    .flex-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .flex-grid .col{
+        width: auto;
+        margin-bottom: 2rem;
+    }
+
+    .contact-us-header h2{
+        line-height: 6rem;
+    }
+  
 }
 
 
