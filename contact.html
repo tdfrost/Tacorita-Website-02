@@ -10,6 +10,13 @@
     <!--Scroll reveal CDN-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #map{
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+
 </head>
 <body>
     <!--header begins-->
@@ -88,6 +95,34 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!--Google map Api-->
+    <section class="google-map-content animate-bottom">
+        <div id="map"></div>
+        <script>
+            function initMap(){
+                // Map Options
+                var options = {
+                    zoom: 17,
+                    center:{lat:32.607600,lng:-85.481380}
+                }
+
+                // New map
+                var map = new google.maps.Map(document.getElementById('map'), options);
+
+                // Add marker
+                var marker = new google.maps.Marker({
+                    position:{lat:32.607600,lng:-85.481380},
+                    map:map,
+                    
+                });
+            }
+        </script>
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9lpTpRjZOcgfoqnd_iyVm2z1fUWTxVTI&callback=initMap&libraries=&v=weekly"
+        defer
+      ></script>
     </section>
 
     <footer>

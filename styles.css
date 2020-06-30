@@ -930,6 +930,10 @@ position: relative;
 }
 
 /*Contact Us page code*/
+.contact-us-content{
+    margin-bottom: -40px;
+}
+
 .contact-us-wrapper{
     display: flex;
     padding: 40px;
