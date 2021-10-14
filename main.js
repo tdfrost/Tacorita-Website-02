@@ -11,6 +11,25 @@ menuToggler.addEventListener('click',function() {
 }
 );
 
+//loader code
+const loader = document.querySelector('.taco-container');
+const main = document.querySelector('.main');
+const loaderBackground = document.querySelector('.taco-loader-background');
+
+
+function init(){
+    setTimeout(() => {
+    loader.style.opacity = 0;
+    loader.style.display = 'none';
+    loaderBackground.style.opacity = 0, 100;
+
+    main.style.display = 'initial';
+    setTimeout(() => main.style.opacity = 1, 50);
+    }, 3000);
+}
+
+init();
+
 //get the button navs
 let tabButtons = document.querySelectorAll('.tab-links');
 

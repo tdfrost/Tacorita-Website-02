@@ -31,6 +31,9 @@ body{
     overflow-x: hidden;
     background: #fff;
     padding: 0;
+    /* opacity: 0; */
+    
+    transition: opacity 2s ease-in;
 }
 
 section{
@@ -57,6 +60,16 @@ p{
 
 /*Taco Loader Code*/
 
+.taco-loader-background{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    background: white;
+    z-index: 10;
+    opacity: 1;
+}
+
 .taco-container,
 .shell,
 .face,
@@ -66,13 +79,15 @@ p{
 .legs,
 .text{
     position: absolute;
+    z-index: 11;
+    opacity: 1;
 }
 
 .taco-container{
     margin: auto;
-    top: 0;
+    top: 0rem;
     bottom: 0;
-    left: 0;
+    left: 0rem;
     right: 0;
     width: 300px;
     height: 100px;
@@ -357,7 +372,7 @@ header{
 .hero{
     width: 100%;
     height: 100vh ;
-    background: url("images/tempTacoBackground.jpg") center;
+    background: url("images/spencer-davis-hs2076lrvKQ-unsplash.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -368,7 +383,7 @@ header{
 .menu-hero{
     width: 100%;
     height: 100vh ;
-    background: url("images/menu-background.jpg") center;
+    background: url("images/menuBackground2.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -379,7 +394,7 @@ header{
 .specials-hero{
     width: 100%;
     height: 100vh ;
-    background: url("images/specials-background.jpg") center;
+    background: url("images/peoplegroup1.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -664,7 +679,7 @@ header{
 
 /*fresh food*/
  .fresh-food{
-     background: url(images/food-drink.jpg) center no-repeat;
+     background: url(images/drink1.jpg) center no-repeat;
      background-size: cover;  
  }
 
@@ -683,12 +698,12 @@ header{
  }
 
  .our-menu .restaurant-description{
-     padding-top: 5.5rem;
+     padding-top: 0.0rem;
      margin-bottom: 0;
  }
 
  .delicious-drinks{
-    background: url(images/drink-section.jpg)center no-repeat;
+    background: url(images/barDrink.jpg)center no-repeat;
     background-size: cover;
  }
 
@@ -979,8 +994,8 @@ position: relative;
 }
 
 .lunch-specials{
-    background: url(images/weekday-specials-background.jpg) center no-repeat;
-    background-size: cover;  
+    background: url(images/taco-bar.jpg) center no-repeat;
+    background-size: 100% 120%;  
 }
 .lunch-specials-content{
     text-align: center;
@@ -990,6 +1005,39 @@ position: relative;
 
 .lunch-specials-content ul{
     list-style: none;
+}
+
+.taco-tuesday{
+    background: url(images/taco-tuesday-background.jpg) center no-repeat;
+    background-size: cover;  
+}
+
+.tuesday-specials-content{
+    text-align: center;
+    list-style: inside;
+    list-style: none;
+}
+
+.tuesday-specials-content .food-type-title {
+    color: #32CD32;
+    font-size: 5rem;
+}
+
+.tuesday-specials-content ul{
+    list-style: none;
+    column-count: 2;
+}
+.tuesday-specials-content h2{
+    font-size: 2.5rem;
+    color: #252525;
+    padding-top: 3rem;
+}
+
+.tuesday-specials-list li{
+    margin: 0 0 10px 0;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 /*About us page code*/
@@ -1205,8 +1253,8 @@ position: relative;
         margin-right: 0;
     }
     nav .logo{
-        /* margin-left: -10rem; */
-        left: -12rem;
+        margin-left: -6rem;
+        /* left: -12rem; */
         position: relative;
     }
     .nav-link{
@@ -1335,6 +1383,11 @@ position: relative;
     }
 
     /*index html font size for phone devices*/
+    .our-menu .restaurant-description{
+        padding-top: 4rem;
+        margin-bottom: 0;
+    }
+
     #fresh-food-headline-top, #fresh-food-headline-bottom{
         font-size: 4.8rem;
     }
