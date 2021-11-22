@@ -1070,14 +1070,18 @@ footer {
   padding: 5px;
 }
 
+.col-md-3 {
+  padding: 1rem 2rem;
+}
+
 .team-item {
   position: relative;
-  margin-left: 20px;
+  /* margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 30px;
-  padding-bottom: 59px;
+  padding-bottom: 59px; */
   width: 100%;
-  max-width: 270px;
+  width: 270px;
   color: #555;
   overflow: hidden;
   font-family: tahoma;
@@ -1216,6 +1220,17 @@ footer {
   font-size: 20px;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.contact-us-details a {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  color: #515151;
+  justify-content: center;
 }
 
 /*Media Queries*/
