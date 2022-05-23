@@ -1081,7 +1081,7 @@ footer {
   margin-bottom: 30px;
   padding-bottom: 59px; */
   width: 100%;
-  width: 270px;
+  width: 280px;
   color: #555;
   overflow: hidden;
   font-family: tahoma;
@@ -1089,7 +1089,7 @@ footer {
 
 .team-item img {
   position: relative;
-  height: 325px;
+  height: 410px;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
