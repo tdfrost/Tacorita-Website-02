@@ -372,7 +372,7 @@ header {
 	width: 100%;
 	height: 100vh;
 	backdrop-filter: blur(10px);
-	background: url("/images/taco-hero.jpg") center;
+	background: url("images/taco-hero.jpg") center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
